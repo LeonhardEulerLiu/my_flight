@@ -13,9 +13,10 @@ import 'package:my_flight/pages/shopSuccess.dart';
 import 'package:dio/dio.dart';
 import 'package:my_flight/common/http.dart';
 
+//原本模拟器是10.0.2.2的，为了方便真机调试而改
 void main() {
   dio.options
-    ..baseUrl = "http://10.0.2.2:8080/ltflight/"
+    ..baseUrl = "http://10.27.201.211:8080/ltflight/"
     ..connectTimeout = 5000
     ..receiveTimeout = 5000;
 
